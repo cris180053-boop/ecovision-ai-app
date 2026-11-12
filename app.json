@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "EcoVision AI",
+    "slug": "ecovision-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "cl.ecovision.ai"
+    },
+    "android": {
+      "package": "cl.ecovision.ai"
+    },
+    "plugins": [
+      ["expo-camera", {
+        "cameraPermission": "EcoVision AI usa la cámara para fotografiar y clasificar residuos.",
+        "recordAudioAndroid": false,
+        "barcodeScannerEnabled": false
+      }],
+      ["expo-image-picker", {
+        "photosPermission": "EcoVision AI permite elegir una foto de un residuo para clasificarlo.",
+        "cameraPermission": false,
+        "microphonePermission": false
+      }]
+    ]
+  }
+}
